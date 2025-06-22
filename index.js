@@ -1,7 +1,13 @@
-var http = require('http');
+const express = require('express');
+const app = express();
+const port = 80;
 
-//create a server object:
-http.createServer(function (req, res) {
-  res.write('A Monk in Cloud'); //write a response to the client
-  res.end(); //end the response
-}).listen(80); //the server object listens on port 80
+app.use(express.static(__dirname)); // Serve static files (like index.html)
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+app.listen(port, '0.0.0.0', () => {
+console.log(`Server running at http://localhost:${port}`);
+});

@@ -65,3 +65,13 @@ To start the application, run the below command in the terminal:
 npm start
 ```
 
+
+###########
+After running the userscript.sh
+
+run the following commad
+
+which node
+
+sudo /home/ubuntu/.nvm/versions/node/v24.2.0/bin/node index.js
+

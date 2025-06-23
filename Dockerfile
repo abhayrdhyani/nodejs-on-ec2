@@ -1,4 +1,5 @@
 # Use an official Node.js runtime as a parent image
+#
 # Using a specific Node.js LTS version for stability (e.g., 20-alpine or 22-alpine)
 FROM node:20-alpine
 
